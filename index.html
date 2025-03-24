@@ -6,6 +6,29 @@
     <title>htmlreader</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        /* Hide the default file input */
+        input[type="file"] {
+            display: none;
+        }
+
+        /* Custom button styling */
+        .custom-file-upload {
+            background: linear-gradient(to top, rgb(200, 200, 200), rgb(255, 255, 255));
+            border: 2px solid white; /* White border */
+            background-color: white; /* White background */
+            color: black; /* Text color inside the button */
+            font-family: 'Fredoka', sans-serif; /* Matching the body font */
+            padding: 10px 20px; /* Padding for a better look */
+            cursor: pointer; /* Make it look clickable */
+            border-radius: 5px; /* Optional: rounded corners */
+            display: inline-block; /* Align it with the other elements */
+        }
+
+        .custom-file-upload:hover {
+            background-color: #f0f0f0; /* Light background on hover */
+            border-color: #ccc; /* Lighter border on hover */
+        }
+
         body {
             margin-left: 150px;
             line-height: 0.3;
@@ -17,5 +40,13 @@
 <body>
     <h1 style="margin-top: 70px">html reader</h1>
     <h3>by Zedion69</h3>
+
+    <!-- Hidden file input -->
+    <input type="file" id="fileInput">
+
+    <!-- Custom button that triggers file input -->
+    <label for="fileInput" class="custom-file-upload">
+        Choose File
+    </label>
 </body>
 </html>
