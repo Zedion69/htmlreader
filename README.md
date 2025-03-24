@@ -1,2 +1,3 @@
-# htmlreader
-a HTML that lets you read your (someones)  html.
+<div align="center>
+# HTML Viewer
+</div>
